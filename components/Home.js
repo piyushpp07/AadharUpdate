@@ -7,13 +7,13 @@ const Home = ({ navigation }) => {
    return (
       <View style={{ flex: 1, alignItems: 'center', backgroundColor: "#FFFFFF", padding: 30 }}>
          <Text style={styles.hea}>Aadhar Details</Text>
-         <View style={{ top: 20, alignItems: 'center', justifyContent: 'space-between' }}>
-            <Avatar.Image size={160} source={require('../assets/icon.png')} style={styles.img} />
+         <Avatar.Image size={160} source={require('../assets/icon.png')} style={styles.img} />
+         <View style={{ top: 20, alignItems: 'center', justifyContent: 'space-between', padding: 10 }}>
             <Text style={styles.t1}>Name:Piyush Paradkar</Text>
             <Text style={styles.t2}>Gender: M</Text>
             <Text style={styles.t2}>Address: 176/24 Rani Durgawati ward Pandhurna Dist Chhindwara</Text>
          </View>
-         <Button style={{ top: 80 }} onPress={() => {
+         <Button style={{ top: 50 }} onPress={() => {
             navigation.navigate("ChangeAddress")
          }} mode="contained">Change Address</Button>
       </View>
